@@ -1,0 +1,22 @@
+
+ <app-root></app-root>
+ <div class="login">
+     <h1>Stock Exchange</h1>
+     <h3>Login</h3>
+
+
+     <form #loginForm="ngForm"action="/login" method="POST" >
+        
+     <label for="username">User Name</label>
+      <input name="userName" class="field" id="username" type="text" placeholder="user name" ngModel/>       
+       <label for="password">Password</label>
+     <input name="password" class="field"  id="password" type="password" placeholder="Password" ngModel/>
+     <input class="btn" type="submit" value="LOGIN">
+     <a routerLink="/register" class="forgot">Register</a> |
+     <a href="#" class="forgot">Forgot password?</a>
+ </form>
+
+ </div>
+
+<router-outlet></router-outlet>
+

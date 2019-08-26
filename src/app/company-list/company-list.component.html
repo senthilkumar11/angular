@@ -1,0 +1,39 @@
+<header class="header">
+    <ul class="nav-bar">
+        
+        <li> <a href="importStockPage.jsp" >Import Data</a></li>
+        <li><a href="/companylist" class="active">Manage Company</a></li>
+        <li><a href="/stocklist">Manage Exchange</a></li>
+        <li><a href="/insertipo">Update IPO details</a></li>
+        <li style="float: right ;margin-right: 30px"><a href="/login" id="logout-link">Logout</a></li>
+    </ul>
+    
+</header>
+
+<div class="main">
+
+    <h1 style="text-align: center;line-height: 200px">List of Companies</h1>
+
+<div class="table-list" >
+
+ 
+  <table>
+
+  <tr>
+    <th >Company id</th>
+    <th >Company Name</th>
+    <th >CEO,BOD</th>
+    <th >Breif</th>
+    <th >Update</th>
+  </tr>
+  <tr *ngFor="let company of company">
+    <td>{{company.id}}</td>
+      <td>{{company.companyName}}</td>
+      <td>{{company.ceo}}</td>
+      <td>{{company.briefWriteUp}}</td>
+  </tr>
+</table>
+</div>
+<h1 style="text-align: center;line-height: 200px;"><a href="/insertcompany" style=" text-decoration: none">Add company</a></h1>
+</div>
+

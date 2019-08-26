@@ -1,0 +1,24 @@
+<app-root></app-root>
+<div class="register">
+    <h1>Stock Exchange</h1>
+    <h3>User Registration</h3>
+    <form action="/registerUser" method="POST" modelAttribute="user1">
+        
+        <label for="username">User Name</label>
+        <input path="userName" class="field" id="username" type="text" placeholder="user name" required="required"/>
+       
+
+        <label for="email">Email</label>
+        <input path="email" class="field" id="email" type="email" placeholder="Email" />
+
+        <label for="mobile">Mobile Number</label>
+        <input path="mobileNumber" class="field" id="mobile" type="text" placeholder="Mobile Number"  />
+
+        <label for="password">Password</label>
+        <input path="password" class="field"  id="password" type="password" placeholder="Password"/>
+
+                    <input class="btn" type="submit" value="Register">
+              Existing User <a href="/login" class="forgot">Login</a> |    
+    </form>
+</div>
+<router-outlet></router-outlet>
