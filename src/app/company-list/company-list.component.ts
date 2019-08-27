@@ -20,3 +20,4 @@ export class CompanyListComponent implements OnInit {
       this.company=response;
   }
 }
+

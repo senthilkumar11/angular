@@ -1,0 +1,41 @@
+<header class="header">
+    <ul class="nav-bar">
+        
+        <li> <a href="importStockPage.html" >Import Data</a></li>
+        <li><a href="/companylist" >Manage Company</a></li>
+        <li><a href="/stocklist" class="active">Manage Exchange</a></li>
+        <li><a href="/insertipo">Update IPO details</a></li>
+        <li style="float: right ;margin-right: 30px"><a href="/login" id="logout-link">Logout</a></li>
+    </ul>
+    
+</header>
+
+<div class="main">
+
+    <h1 style="text-align: center;line-height: 200px">List of Stock Exchange</h1>
+
+<div class="table-list">
+    
+        <table>
+      
+        <tr>
+          <th >Name</th>
+          <th >Brief</th>
+          <th >Contact Address</th>
+          <th >Remarks</th>
+          <th >Update</th>
+        </tr>
+        <tr *ngFor="let stock of stockExchange">
+            <th>{{stock.name}}</th>
+            <th>{{stock.brief}}</th>
+            <th>{{stock.contactAddress}}</th>
+            <th>{{stock.remarks}}</th>
+
+        </tr>
+      
+    </table>
+    
+</div>
+<h1 style="text-align: center;line-height: 200px;"><a href="/insertstock " style=" text-decoration: none">Add Stock Exchange</a></h1>
+</div>
+<router-outlet></router-outlet>

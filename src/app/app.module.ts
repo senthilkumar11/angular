@@ -10,6 +10,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CreatecompanyComponent } from './createcompany/createcompany.component';
 import { CompanyListComponent } from './company-list/company-list.component';
+import { HeaderComponent } from './header/header.component';
+import { LogoutComponent } from './logout/logout.component';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
+import { StockListComponent } from './stock-list/stock-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { CompanyListComponent } from './company-list/company-list.component';
     LoginComponent,
     RegisterComponent,
     CreatecompanyComponent,
-    CompanyListComponent
+    CompanyListComponent,
+    HeaderComponent,
+    LogoutComponent,
+    AdminComponent,
+    UserComponent,
+    StockListComponent
   ],
   imports: [
     BrowserModule,

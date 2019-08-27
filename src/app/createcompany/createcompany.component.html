@@ -6,49 +6,50 @@
                 Company</a></li>
         <li><a href="/stocklist">Manage Exchange</a></li>
         <li><a href="/insertipo">Update IPO details</a></li>
-        <li style="float: right; margin-right: 30px"><a href="/login" id="logout-link">Logout</a></li>
+        <li style="float: right; margin-right: 30px"><a routerLink="/logout"id="logout-link">Logout</a></li>
     </ul>
 
-</header>
-
-<div class="main">
+</header><div class="main">
 
     <h1 style="text-align: center; line-height: 200px">Create New
         Company</h1>
     <div class="table-list">
-        <form #companyForm="ngForm" action="insert" method="POST">
+        <form #companyForm="ngForm" action="insert" (ngSubmit)="createCompany(companyForm)" method="POST">
             <table>
                 <tr>
                     <td>CompanyName:</td>
                     <td><input type="text" name="companyName" placeholder="CompanyName" ngModel/>
                 </tr>
                 <tr>
-                    <td>Ceo & Board of member name:</td>
+                    <td>Ceo</td>
                     <td><input type="text" name="ceo" placeholder="CeoName" required="required" ngModel/>
                         <br></td>
                 </tr>
                 <tr>
+                    <td>Board of Directors</td>
+                    <td><input type="text" name="boardOfDirectors" placeholder="board Of Directors" required="required" ngModel/>
+                        <br></td>
+                </tr>
+                
+                <tr>
                     <td>sector id:</td>
-                    <td><input type="number" name="sectorId" name="sid" placeholder="sector id" required="required" ngModel/>
+                    <td><input type="number" name="sectorId" name="sectorId" placeholder="sector id" required="required" ngModel/>
                     </td>
                 </tr>
                 <tr>
-                    <td>TurnOver:</td>
-                    <td><input type="decimal" name="turnOver" name="turnover" placeholder="Turnover"
-                            required="required" ngModel/></td>
-                </tr>
-                <tr>
                     <td>Brief:</td>
-                    <td><input type="text" name="briefWriteUp" name="Brief" placeholder="Brief" ngModel/></td>
+                    <td><input type="text" name="briefWriteUp"  placeholder="Brief" ngModel/></td>
                 </tr>
                 <tr>
-                    <td>Stock Price ID:</td>
-                    <td><input type="number" name="stockPriceId" name="scode" placeholder="stock Price Id"
+                    <td>TurnOver:</td>
+                    <td><input type="decimal" name="turnOver" name="turnOver" placeholder="Turnover"
                             required="required" ngModel/></td>
                 </tr>
+                
+              
                 <tr>
                     <td colspan="2" style="text-align: center"><input class="button-style" type="submit"
-                            value="Submit" /></td>
+                            value="Submit"  /></td>
                 </tr>
             </table>
 
