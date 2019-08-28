@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IpoService } from '../service/ipo.service';
+import { IpoService } from 'src/app/service/ipo.service';
+
 @Component({
-  selector: 'app-list-ipo-details',
-  templateUrl: './list-ipo-details.component.html',
-  styleUrls: ['./list-ipo-details.component.css']
+  selector: 'app-user-ipo-list',
+  templateUrl: './user-ipo-list.component.html',
+  styleUrls: ['./user-ipo-list.component.css']
 })
-export class ListIpoDetailsComponent implements OnInit {
+export class UserIpoListComponent implements OnInit {
 
   ipoDetails:string[];
   constructor(private ipoService:IpoService) { }
@@ -21,5 +22,4 @@ export class ListIpoDetailsComponent implements OnInit {
   }
 
 }
-
 

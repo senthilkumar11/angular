@@ -1,21 +1,23 @@
-<header class="header">
-    <ul class="nav-bar">
+
+    <header class="header">
+        <ul class="nav-bar">
+            <li> <a href="/useripo" class="active">IPOs</a></li>
+            <li><a href="/usercompanylist" >Company List</a></li>
+            <li><a href="#">Compare Company</a></li>
+            <li><a href="#">Other</a></li>
+            <li style="float: right ;margin-right: 30px"><a href="/logout" id="logout-link">Logout</a></li>
+        </ul>
         
-        <li> <a href="/import" >Import Data</a></li>
-        <li><a href="/companylist" >Manage Company</a></li>
-        <li><a href="/stocklist">Manage Exchange</a></li>
-        <li><a href="/ipo" class="active"> IPO details</a></li>
-        <li style="float: right ;margin-right: 30px"><a href="/logout" id="logout-link">Logout</a></li>
-    </ul>
-    
-</header>
+    </header>
+
+
+
 <div class="main">
 
     <h1 style="text-align: center;line-height: 200px">List of IPOS</h1>
 
 <div class="table-list" >
 
- 
   <table>
     <tr>
         <th>#</th>
@@ -33,7 +35,7 @@
         <td>{{ipo.pricePerShare}}</td>
         <td>{{ipo.totalNumberOfShares}}</td>
         <td>{{ipo.openDateTime}}</td>
-        <td><input type="button" name="edit" value="edit"></td>
+      
     </tr>
 
 </table>

@@ -13,10 +13,12 @@ import { CompanyListComponent } from './company-list/company-list.component';
 import { HeaderComponent } from './header/header.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
-import { UserComponent } from './user/user.component';
+import { UserComponent } from './user/user/user.component';
 import { StockListComponent } from './stock-list/stock-list.component';
 import { ImportStockpriceComponent } from './import-stockprice/import-stockprice.component';
 import { ListIpoDetailsComponent } from './list-ipo-details/list-ipo-details.component';
+import { UserIpoListComponent } from './user/user-ipo-list/user-ipo-list.component';
+import { UserCompanyListComponent } from './user/user-company-list/user-company-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ListIpoDetailsComponent } from './list-ipo-details/list-ipo-details.com
     UserComponent,
     StockListComponent,
     ImportStockpriceComponent,
-    ListIpoDetailsComponent
+    ListIpoDetailsComponent,
+    UserIpoListComponent,
+    UserCompanyListComponent
   ],
   imports: [
     BrowserModule,
