@@ -1,0 +1,23 @@
+<header class="header">
+        <ul class="nav-bar">
+            <li> <a href="/import" class="active">Import Data</a></li>
+            <li><a href="/companylist">Manage Company</a></li>
+            <li><a href="/stocklist">Manage Exchange</a></li>
+            <li><a href="/insertipo">Update IPO details</a></li>
+            <li style="float: right ;margin-right: 30px"><a href="/login" id="logout-link">Logout</a></li>
+        </ul>
+        
+    </header>
+    <div style="text-align:center" class="main">
+        <h1 style="text-align: center;line-height: 200px">IMPORT EXCEL</h1>
+        <div class="form-style">
+        <label>
+            <input type="file" accept = ".xls,.xlsx" (change)="selectFile($event)">
+            </label>
+            <button [disabled]="!selectedFiles"
+    (click)="upload()">Upload</button>
+        </div>
+    </div>
+    <div class="main">
+
+    

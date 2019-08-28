@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { StockExchangeService } from '../service/stock-exchange.service';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-createstock',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatestockComponent implements OnInit {
 
-  constructor() { }
+  constructor(private stockExchangeService:StockExchangeService) { }
 
   ngOnInit() {
   }
+  createStockExchange(stockFrom:NgForm)
 
+  {
+    console.log("test");
+    this.stockExchangeService.createStockexchange(stockFrom.value)
+    .subscribe( data => {
+      alert("Stock created successfully.");
+    });
+    
+  }
 }

@@ -24,8 +24,9 @@ export class StockExchangeService {
     console.log("test call");
      return this.httpClient.get<StockExchange[]>('http://localhost:9091/stockexchangelist');
   }
-  createStockexchange(StockExchange)
+  createStockexchange(stockExchange)
   {
-    return this.httpClient.post<StockExchange>("http://localhost:9091/insertstockexchange",StockExchange);
+    console.log(stockExchange);
+    return this.httpClient.post<StockExchange>('http://localhost:9091/insertstockexchange',stockExchange);
   }
 }

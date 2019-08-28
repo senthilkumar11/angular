@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { StockListComponent } from './stock-list/stock-list.component';
+import { ImportStockpriceComponent } from './import-stockprice/import-stockprice.component';
 
 
 const routes: Routes = [
@@ -24,8 +25,8 @@ const routes: Routes = [
     { path: 'admin', component: AdminComponent ,canActivate:[AuthGaurdService]},
     { path: 'user', component: UserComponent },
     {path:'stocklist',component:StockListComponent},
-    {path:'insertstock',component:CreatestockComponent}
-
+    {path:'insertstock',component:CreatestockComponent},
+    {path:'import',component:ImportStockpriceComponent}
 ];
 
 @NgModule({

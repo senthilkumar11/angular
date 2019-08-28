@@ -15,6 +15,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { StockListComponent } from './stock-list/stock-list.component';
+import { ImportStockpriceComponent } from './import-stockprice/import-stockprice.component';
+import { ListIpoDetailsComponent } from './list-ipo-details/list-ipo-details.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { StockListComponent } from './stock-list/stock-list.component';
     LogoutComponent,
     AdminComponent,
     UserComponent,
-    StockListComponent
+    StockListComponent,
+    ImportStockpriceComponent,
+    ListIpoDetailsComponent
   ],
   imports: [
     BrowserModule,

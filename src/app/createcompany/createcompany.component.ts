@@ -20,7 +20,7 @@ export class CreatecompanyComponent implements OnInit {
   console.log(companyForm.value);
   this.companyService.createCompany(companyForm.value)
   .subscribe( data => {
-    alert("Employee created successfully.");
+    alert("Company created successfully.");
   });
   }
 }
